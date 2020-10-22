@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="nl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Koen" />
+    <meta name="keywords" content="js" />
+    <meta name="description" content="Javascript website" />
+    <title>Tijdschrift kopen</title>
+  </head>
+  <body>
+    <script>
+      let naam = prompt("Wat is de naam van het tijdschrift");
+      let kost = prompt("Wat is de kost van het tijdschrift");
+      let stuks = prompt("Hoeveel stuks?");
+
+      document.write(`<p> Het tijdschrift is ${naam} het type hiervan is ${typeof naam} De kostprijs van 1 exemplaar is ${kost}, het type hiervan is  ${typeof kost}
+        Het aantal exemplaren dat je wil kopen is ${stuks} het type hiervan is  ${typeof stuks} De totale prijs is dan ${
+        kost * stuks
+      }</P>`);
+    </script>
+  </body>
+</html>
