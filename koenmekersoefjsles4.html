@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="nl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Koen" />
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <title>Titel</title>
+  </head>
+  <body>
+    <script>
+      let voornaam = "java";
+      let achternaam = "Script";
+      let namen = voornaam + " " + achternaam;
+      document.write(`<p> Hallo ${namen}</p>`);
+
+      document.write(
+        ` <p> jouw naam bevat ${voornaam.length + achternaam.length}</p>`
+      );
+
+      let filename = "javaScriptFrameWork";
+      document.write(`<p> De originele filename is'${filename}'</p>`);
+
+      filename = filename.toLowerCase();
+      document.write(
+        `<p> de filename kan beter in kleine letters getypt worden, dus: '${filename}'</p> `
+      );
+      let splits1 = filename.substring(0, 10);
+      console.log(splits1);
+      let splits2 = filename.substring(10, 19);
+      console.log(splits2);
+
+      document.write(
+        ` <p> Als je '${filename}' opsplitst, krijg je: '${splits1}'en '${splits2}' `
+      );
+    </script>
+  </body>
+</html>
+
+<!-- Maak een variabele aan genaamd filename. Hierin steek je de tekst: javaScriptFrameWork.
+Druk deze variabele af op het scherm.
+Resultaat (let op de quotes, hiertussen staat een variabele):
+De originele filename is: 'javaScriptFrameWork'
+Zet de letters van de variabele om in kleine letters. Let op, dit is niet enkel tonen, maar echt omzetten.
+Resultaat (let op de quotes, hiertussen staat een variabele):
+De filename kan beter in kleine letters getypt worden, dus: 'javascriptframework'.
+Maak 2 nieuwe variabelen aan waarin je via de substring() methode de filename opsplitst.
+Resultaat (let op de quotes, hiertussen staan variabelen):
+Als je 'javascriptframework' opsplitst, krijg je : 'javascript' en 'framework'.
+Maak een nieuwe variabele en steek het 5e karakter van de filename variabele erin.
+Resultaat (let op de quotes, hiertussen staan variabelen):
+Het zesde karakter (volgens mensen) in 'javascriptframework' is: 'c'.
+Maak een variabele email met inhoud jan.klaassen@mail.com. Maak een variabele waarin je de positie van de @ steekt.
+Resultaat (let op de quotes, hiertussen staan variabelen):
+In 'jan.klaassen@mail.com' staat de @ op positie: 12
+Maak een nieuwe variabele waarin je de naam opvraagt uit de email. Let op: dit moet altijd kloppen, ook als je een andere naam gebruikt, je mag dus niet een vaste eindpositie gebruiken , maar werken met de opvraging van de positie van de @.
+Resultaat (let op de quotes, hiertussen staat een variabele):
+De naam is dus: 'jan.klaassen'
+Zoek op hoe de opdracht substr() werkt.
+Maak een variabele met de tekst: Deze tekst is te lang en zal worden afgekapt op 8 tekens m.b.v. substr().
+Maak een nieuwe variabele en steek er de eerste 8 karakters in van de vorige variabele m.b.v. substr().
+Resultaat (let op de quotes, hiertussen staan variabelen):
+De originele tekst: 'Deze tekst is te lang en zal worden afgekapt op 8 tekens m.b.v. substr()' wordt dan: 'Deze tek'
+Zorg dat alle teksten in een paragraaf staan. Het uiteindelijke resultaat zal dus zijn:
+
+Hallo Java Script.
+
+Jouw naam bevat 10 karakters.
+
+De originele filename is: 'javaScriptFrameWork'
+
+De filename kan beter in kleine letters getypt worden, dus: 'javascriptframework'
+
+Als je 'javascriptframework' opsplitst, krijg je : 'javascript' en 'framework'.
+
+Het zesde karakter (volgens mensen)  in 'javascriptframework' is: 'c'.
+
+In 'jan.klaassen@mail.com' staat de @ op positie: 12
+
+De naam is dus: 'jan.klaassen'
+
+De originele tekst: 'Deze tekst is te lang en zal worden afgekapt op 8 tekens m.b.v. substr()' wordt dan: 'Deze tek' -->
