@@ -1,0 +1,50 @@
+<script>
+  // vraag 1
+  let maanden = ["januari", "februari", "maart"];
+  document.write(<p>${maanden}</p>);
+
+  maanden[3] = "april";
+  maanden[4] = "mei";
+  maanden[5] = "juni";
+  document.write(<p>${maanden}</p>);
+
+  maanden.push("juli");
+  document.write(<p>${maanden}</p>);
+
+  maanden.push("augustus", "september", "oktober", "november", "december");
+  document.write(<p>${maanden}</p>);
+
+  document.write(<p>Er zijn ${maanden.length} maanden in de array.</p>);
+
+  let controleMaand = maanden.indexOf("March");
+  document.write(
+    <p>
+      De maand "March" bevindt zich in de array op positie: ${controleMaand}
+    </p>
+  );
+
+  // vraag 2
+  let namen = ["Erik", "Sofie", "Adam", "Zorro"];
+  namen.sort();
+  document.write(<p>De gesorteerde namen zijn: ${namen}</p>);
+
+  let naamZoeken = prompt("Welke naam zoekt u?");
+  document.write(
+    <p>
+      De naam ${naamZoeken} bevindt zich op positie: $
+      {namen.indexOf(naamZoeken)}
+    </p>
+  );
+
+  // vraag 3
+  let volledigeNaam = prompt("Wat is je naam (voornaam achternaam?");
+
+  let arrayNaam = [volledigeNaam];
+  let arraySplit = volledigeNaam.split(" ");
+  let arrayReverse = arraySplit.reverse();
+  let reverseJoin = arrayReverse.join(" ");
+
+  document.write(
+    <p>Jouw naam genoteerd als familienaam voornaam is: ${reverseJoin}</p>
+  );
+</script>

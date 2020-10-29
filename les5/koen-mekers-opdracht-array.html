@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="nl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Koen" />
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <title>array</title>
+  </head>
+  <body>
+    <script>
+      let maanden = ["Januari", "Februari", "Maart"];
+      maanden[3] = "april";
+      maanden[4] = "mei";
+      maanden[5] = "juni";
+      maanden.push("juli");
+      maanden.push("augustus", "september", "oktober", "november", "december");
+      document.write(`<p> ${maanden}</p>`);
+      document.write(`<p> 
+        Er zijn ${maanden.length} in deze array</p> `);
+      let march1 = maanden.indexOf("March");
+      document.write(
+        `<p> de maand "March" bevindt zich in de array op positie ${march1}</p>`
+      );
+
+      //   oefening 2 (nog niet geweend)
+
+      let namen = ["Erik", "Sofie", "Adam", "Zorro"];
+      namen.sort();
+      document.write(`<p> De gesorteerde namen ${namen}  </p>`);
+
+      let extra = prompt("Kent u nog tags", "vul hier in");
+      htmlTags.push(extra);
+    </script>
+  </body>
+</html>

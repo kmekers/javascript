@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="nl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Koen" />
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <title>Titel</title>
+  </head>
+  <body>
+    <script>
+      let scores = [];
+      let namen = new Array();
+
+      scores[0] = 39;
+      scores[1] = 40;
+      scores[2] = 100;
+      scores[3] = 49;
+
+      let seizoenen = new Array("winter", "lente", "zomer", "herfst");
+
+      let scriptingtalen = ["javascript", "php"];
+
+      document.write(`
+      <p>${scores}</p>
+      <p>${seizoenen}</p>
+      `);
+      let lengte = scores.length;
+      document.write(` <p>${lengte}</p>`);
+    </script>
+  </body>
+</html>
