@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="nl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Koen" />
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <title>Titel</title>
+  </head>
+  <body>
+    <script>
+      let voornaam = "Java";
+      let achternaam = "Script";
+      let va = voornaam + " " + achternaam;
+      document.write(`<p>Hallo ${va}</p>`);
+      let lengte = voornaam + achternaam;
+      document.write(`<p>jouw naam bevat ${lengte.length} karakters</p>`);
+      filname = "javaScriptFrameWork";
+      document.write(`<p>De originele filename is '${filname}'</p>`);
+      filename2 = filname.toLowerCase();
+      document.write(
+        `<p>we zetten dit beter om in kleine letters, bijgevolg '${filename2}'</p>`
+      );
+      let splits1 = filename2.substring(0, 4);
+      let splits2 = filename2.substring(4, 10);
+
+      document.write(
+        `<p>Als je deze namen opsplitst krijg je ${splits1} en ${splits2}</p>`
+      );
+      document.write(
+        `<p>het zesde karakter is volgens mensen ${filname.charAt(5)}</p>`
+      );
+
+      let mail = "jan.klaassen@mail.com";
+      document.write(
+        `<p>in 'jan.klaassen@mail.com' staat de @ op ${mail.indexOf("@")}</p>`
+      );
+
+      let mails = mail.substring(0, mail.indexOf("@"));
+
+      document.write(`<p>je naam is dus ${mails}</p>`);
+      let tekst =
+        " 'Deze tekst is te lang en zal worden afgekapt op 8 tekens m.b.v. substr()' wordt dan:' ";
+      document.write(`<p>${tekst}${tekst.substring(0, 10)}</p>`);
+      // indexof nog eens  en opdracht nalezen
+    </script>
+  </body>
+</html>

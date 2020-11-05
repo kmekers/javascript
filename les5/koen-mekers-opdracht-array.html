@@ -30,7 +30,11 @@
       namen.sort();
       document.write(`<p> De gesorteerde namen ${namen}  </p>`);
 
-      let extra = prompt("Kent u nog tags", "vul hier in");
+      let extra = prompt("welke naam zoekt u", "vul hier in");
+      document.write(
+        `<p>De naam ${extra} bevind zich op opsitie ${namen.indexOf(extra)}</p>`
+      );
+
       htmlTags.push(extra);
     </script>
   </body>
