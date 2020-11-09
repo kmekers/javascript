@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="nl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Koen" />
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <title>Titel</title>
+  </head>
+  <body>
+    <script>
+      let punt = prompt("Geef het aantal punten in twee cijfers xo");
+      if (punt == null) {
+        document.write(`<p>Mijn god, u heeft geanuleerd!</p>`);
+      } else if (punt.length == 0) {
+        document.write(`<p>U hebt niets ingegeven, dum dum</p>`);
+      } else if (isNaN(punt)) {
+        document.write(`<p>Dit is geen nummer</p>`);
+      } else if (punt.length != 2)
+        document.write(`<p>Geef de punten in met 2 cijfers</p>`);
+      else {
+        if (punt >= 95) {
+          document.write(`<p>De graad is: a+</p>`);
+        } else if (punt >= 90) {
+          document.write(`<p> De graad is A.</p>`);
+        } else if (punt >= 80) {
+          document.write(`<p>De graad is: B</p>`);
+        } else if (punt >= 70) {
+          document.write(`<p>De graag is: C </p>`);
+        } else if (punt >= 60) {
+          document.write(`<p>De graag is: D </p>`);
+        } else if (punt >= 50) {
+          document.write(`<p>De graag is: E</p>`);
+        }
+        if (punt < 50) {
+          document.write(`<p> u bent gebuisd</p>`);
+        }
+      }
+    </script>
+  </body>
+</html>

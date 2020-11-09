@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="nl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Koen" />
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <title>Titel</title>
+  </head>
+  <body>
+    <script>
+      let today = new Date();
+      let tijdpc = today.getHours();
+      document.write(`<p>het is nu ${tijdpc} uur</p>`);
+      if (tijdpc >= 0 && tijdpc <= 7) {
+        document.write(`<p>goeienacht</p>`);
+      } else if (tijdpc > 7 && tijdpc <= 11) {
+        document.write(`<p>goeiemorgen</p>`);
+      } else if (tijdpc > 11 && tijdpc <= 18) {
+        document.write(`<p>goeiemiddag</p>`);
+      } else {
+        document.write(`<p>goeie avond</p>`);
+      }
+    </script>
+  </body>
+</html>

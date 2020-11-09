@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="nl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Koen" />
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <title>Titel</title>
+  </head>
+  <body>
+    <script>
+      let leeftijd = prompt("Wat is jouw leeftijd?");
+      if (leeftijd < 18) {
+        document.write(`<p>Je krijgt een watertje</p>`);
+      } else if (leeftijd >= 18) {
+        document.write(`<p>je mag een pintje drinken</p>`);
+      } else {
+        document.write(`<p>je het iets verkeerd ingegeven</p>`);
+      }
+      /*
+        let ww = prompt("wachtwoord?");
+        if (ww != "JavaScript") {
+          document.write(`<p>Dit is niet het correcte ww</p>`);
+        }
+
+        let leeftijd2 = prompt("wat is jouw pensioenleeftijd");
+        if (leeftijd2 <= 67) {
+          document.write(`<p>je kan nog niet op pensioen</p>`);
+        } */
+    </script>
+  </body>
+</html>

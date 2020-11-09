@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="nl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Koen" />
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <title>Titel</title>
+  </head>
+  <body>
+    <script>
+      let naam = prompt("geef uw naam in aub");
+      if (naam == null) {
+        document.write("u heeft geanuleerd");
+      } else if (naam.length == 0) {
+        document.write(`<p>u heef niks ingegeven!</p>`);
+        // dit zou standaard moeten zijn
+      } else {
+        document.write(`<p>hallo ${naam} hoe is het ermee</p>`);
+      }
+    </script>
+  </body>
+</html>
