@@ -24,25 +24,21 @@
       );
       let splits1 = filename2.substring(0, 4);
       let splits2 = filename2.substring(4, 10);
-
       document.write(
         `<p>Als je deze namen opsplitst krijg je ${splits1} en ${splits2}</p>`
       );
       document.write(
         `<p>het zesde karakter is volgens mensen ${filname.charAt(5)}</p>`
       );
-
       let mail = "jan.klaassen@mail.com";
       document.write(
         `<p>in 'jan.klaassen@mail.com' staat de @ op ${mail.indexOf("@")}</p>`
       );
-
       let mails = mail.substring(0, mail.indexOf("@"));
-
       document.write(`<p>je naam is dus ${mails}</p>`);
       let tekst =
         " 'Deze tekst is te lang en zal worden afgekapt op 8 tekens m.b.v. substr()' wordt dan:' ";
-      document.write(`<p>${tekst}${tekst.substring(0, 10)}</p>`);
+      document.write(`<p>${tekst}${tekst.substr(0, 10)}</p>`);
       // indexof nog eens  en opdracht nalezen
     </script>
   </body>
