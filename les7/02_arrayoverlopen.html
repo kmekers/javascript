@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="nl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Koen" />
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <title>Titel</title>
+  </head>
+  <body>
+    <script>
+      let auto = prompt("Hoeveel automerken wil je ingeven?");
+      let array = new Array();
+
+      for (i = 1; i <= auto; i++) {
+        array.push(prompt(`Geef merk nr ${i} in.`));
+      }
+
+      document.write(`<p>U gaf de volgende merken in:</p>`);
+
+      for (i = 0; i < auto; i++) {
+        document.write(`<p>${i + 1}: ${array[i]}</p>`);
+      }
+    </script>
+  </body>
+</html>
