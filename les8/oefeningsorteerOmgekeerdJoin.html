@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="nl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Koen" />
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <title>Titel</title>
+  </head>
+  <body>
+    <script>
+      function sorteerOmgekeerdJoin(ontvangenamen) {
+        let naam = ontvangenamen.sort();
+        naam.reverse();
+        let gejoined = naam.join("-");
+        return gejoined;
+      }
+      let namen = ["jan", "Piet", "Joris"];
+      let anderenaam = sorteerOmgekeerdJoin(namen);
+      document.write(
+        `<p>de arary gesorteerd en genjoined geeft${anderenaam}</p>`
+      );
+    </script>
+  </body>
+</html>
