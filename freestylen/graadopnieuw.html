@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="nl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Koen" />
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <title>Titel</title>
+  </head>
+  <body>
+    <script>
+      let punten = prompt("Geef het aantal punten in 2 cijfers");
+      if (punten == null) {
+        document.write("u heeft geanuleerd");
+      } else if (punten <= 2) {
+        document.write(`<p>u moet 2 cijfers opgeven</p>`);
+      } else if (isNaN(punten)) {
+        document.write(`<p>Dit is geen nummer</p>`);
+      } else {
+        if (punten >= 95) {
+          document.write(`<p>uw graad is fuck you</p>`);
+        } else if (punten >= 90) {
+          document.write(`<p>uw punten zijn sucka ma balls</p>`);
+        } else if (punten <= 90) {
+          document.write(`<p>you need to blow me</p>`);
+        }
+      }
+
+      //else if(punten )
+    </script>
+  </body>
+</html>
