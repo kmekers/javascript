@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="nl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Koen" />
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <title>Titel</title>
+  </head>
+  <body>
+    <script>
+      /*  function hoofdletters(tekst) {
+              document.write(`<p> ${tekst.toUpperCase()}</p>`);
+            }
+            hoofdletters("javascript");
+            hoofdletters("css");*/
+
+      /* let namen = ["Jan", "Piet", "Joris"];
+            let dieren = ["hond", "kat", "paard"];
+            function toonEersteElementUitArray(ontvangen) {
+              document.write(`<p>${ontvangen[0]}</p>`);
+            }
+
+            toonEersteElementUitArray(namen);
+            toonEersteElementUitArray(dieren);*/
+
+      /*  function product(nr1, nr2, nr3) {
+        let resultaat = nr1 * nr2 * nr3;
+        return resultaat;
+      }
+      let uitkomst = product(3, 4, 5);
+      document.write(`<p>het product is ${uitkomst}</p>`);*/
+      /*  function sorteerOmgekeerdJoin(ontvangenNamen) {
+        return ontvangenNamen.sort().reverse().join("-");
+      }
+
+      let namen = ["Jan", "Piet", "Joris"];
+      let namenAangepast = sorteerOmgekeerdJoin(namen);
+      document.write(
+        `<p>De array omgedraaid gesorteerd en gejoined geeft: ${namenAangepast}<p/>`
+      );*/
+
+      function test(g1, g2) {
+        if (g1 < g2) {
+          return "kleiner dan";
+        } else if (g1 == g2) {
+          return "gelijk aan";
+        } else {
+          return "groter dan";
+        }
+      }
+      let getal1 = prompt("Geef het eerste getal");
+      let getal2 = prompt("Geef het tweede getal");
+      let verhouding = test(getal1, getal2);
+      document.write(`<p>${getal1} is ${verhouding} ${getal2}<p/>`);
+    </script>
+  </body>
+</html>
