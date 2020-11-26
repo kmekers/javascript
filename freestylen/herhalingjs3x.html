@@ -10,12 +10,37 @@
   </head>
   <body>
     <script>
-      function eersteCharacter(input) {
-        let VakNaam = "Javascript";
-        let Vaknaam2 = VakNaam.CharAt(0);
-        document.write(`<p>${Vaknaam2}</p>`);
-      }
-      eersteCharacter();
+      "use strict";
+      let arrayGetallen = [];
+      let aantal = prompt("Hoeveel getallen wil je ingeven?", "3");
+
+      // Controle van de eerste prompt
+      let controleAantal = (input) => {
+        if (input == null) {
+          document.write(`<p>U heeft geannuleerd</p>`);
+          return "FOUT";
+        } else if (input == "") {
+          document.write(`<p>U heeft niets ingegeven</p>`);
+          return "FOUT";
+        } else if (!isNaN(input)) {
+          return input;
+        } else {
+          document.write(`<p>Dit is geen correcte ingave!</p>`);
+          return 0;
+        }
+      };
+
+      let controleGetal = (input) => {
+        if (input == null) {
+          return "fout";
+        } else if (input == "") {
+          return "fout";
+        } else if (isNaN(input)) {
+          return "fout";
+        } else {
+          return input;
+        }
+      };
     </script>
   </body>
 </html>
